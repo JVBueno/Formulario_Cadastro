@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <fieldset class ="contorno">
+    <div>
+        <h1 id="titulo">Cadastro de Desenvolvedores</h1>
+        
+        <p id="subtitulo"><strong>Preencha suas informações</strong><p>
+        
+    </div>
+
+    <form>
+            <div class = "campo">
+                <label><strong>Nome</strong></label><br>
+                <input type="text" nome="nome" required>
+            </div>
+            <div class = "campo">
+                <label><strong>Sobrenome</strong></label><br>
+                <input type="text" nome="Sobrenome" required>
+                <br>
+            </div>
+   
+            <div class = "campo">
+                <label><strong>Email</strong></label><br>
+                <input type="email" nome="email"required>
+                <br>
+            </div>
+
+            <div class = "campo">
+                <label><strong>Data de Nascimento</strong></label><br>
+                <input type="date" nome="nascimento">
+              <br>
+            </div>
+
+            <div class = "campo">
+
+                <label><strong>Telefone de contato</strong></label><br>
+                <input type="tel" nome="tel" placeholder="11 99999-9999">
+                <br>
+            </div>
+
+            <div class = "campo">
+                <label id="genero"><strong>Gênero</strong></label><br>
+                <select>
+                    <option selected disabled value="">Selecione</option>
+                    <option value="Heterosexual">Heterosexual</option>
+                    <option value="Homosexual">Homosexual</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+
+            <div class = "campo">
+                <label><strong>Declaração de raça</strong></label><br>
+                <select>
+                    <option id ="selecao" selected disabled value="">Selecione</option>
+                    <option value="Branco">Branco</option>
+                    <option value="Negro">Negro</option>
+                    <option value="Pardo">Pardo</option>
+                    <option value="Indigena">Indígena</option>
+                    <option value="Amarelo">Amarelo</option>
+                    <option value="Não Informado">Não Informado</option>
+                </select>
+            </div>
+
+            </div>
+            <div class = "campo">
+                <label><strong>Defina sua aplicação como desenvolvedor</strong></label><br>
+                <label>
+                    <input type="radio" name="typedev" value="Frontend" checked>Front-end<br>
+                </label>
+                <label>
+                    <input type="radio" nome="typedev" value="Backend">Back-end<br>
+                </label>
+                <label>
+                    <input type="radio" nome="typedev" value="Full">Full-Stack<br>
+                </label>
+            </div>
+
+            <div class = "campo">
+                <label><strong>Senioridade</strong></label><br>
+                <select>
+                    <option selected disabled value="">Selecione</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Pleno">Pleno</option>
+                    <option value="Senior">Senior</option>
+                </select>
+            </div>
+    
+            <div class = "campo">
+                <label><strong>Selecione as tecnologia que utiliza</strong></label><br>
+                <input type="checkbox" name="tecnologia1" value="HTML">HTML
+                <input type="checkbox" name="tecnologia2" value="CSS">CSS  
+                <input type="checkbox" name="tecnologia3" value="Javascript">Javascript              
+                <input type="checkbox" name="tecnologia4" value="PHP">PHP           
+                <input type="checkbox" name="tecnologia5" value="C#">C#              
+                <input type="checkbox" name="tecnologia6" value="Python">Python          
+                <input type="checkbox" name="tecnologia7" value="Java">Java           
+            </div>
+          
+        <div class = "campo">
+            
+            <label><strong>Informações adicionais:</strong></label>
+            <br>
+             <textarea cols="52" rows="3" name="experiencia"></textarea>
+        </div>
+
+        <div class = "campo">
+            <label><strong>Insira seu currículo</strong></label><br>
+            <input type="file" name="anexo">
+        </div>
+
+        <div class ="campo">
+            <label><strong>Senha</strong></label><br>
+            <input type="password" nome="psw" required>
+        </div>
+
+        <div class = "campo">
+            <label><strong>Confirme sua senha</strong></label><br>
+            <input type="password" name="psw" required>
+        </div>
+
+        <button class="botao" type="submit">Concluído</button>
+        <input id = "reset" type="reset" value="Limpar">
+
+        </div>
+    </form>
+    </fieldset>
+</body>
+</html>
+
+
+
